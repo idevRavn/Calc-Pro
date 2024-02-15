@@ -18,10 +18,10 @@ buttons.forEach((button) => {
       } else if (button.textContent === "DE") {
         display.textContent = display.textContent.slice(0, -1);
       } else if (button.textContent === "=") {
-        secondNumber = display.textContent;
+        secondNumber = parseFloat(display.textContent);
         calculate(firstNumber, secondNumber, operator);
       } else {
-        firstNumber = display.textContent;
+        firstNumber = parseFloat(display.textContent);
         operator = button.textContent;
         display.textContent = "";
       }
@@ -49,6 +49,5 @@ function calculate(firstNumber, secondNumber, operator) {
     default:
       return "";
   }
-  console.log(result);
   display.textContent = result;
 }
