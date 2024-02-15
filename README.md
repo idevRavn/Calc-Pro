@@ -3,6 +3,10 @@
 Welcome to Calc Pro! This is a simple calculator web application developed using HTML, CSS, and JavaScript.
 ![Calc Pro Website Preview](./images/preview.png)
 
+## Live Website
+
+https://idevravn.github.io/Calc-Pro/
+
 ## Table of Contents
 
 - [Features](#features)
@@ -41,3 +45,17 @@ To use the calculator, simply click on the buttons to input numbers and operator
 
 - Fonts: [Bungee Spice](https://fonts.google.com/specimen/Bungee+Spice), [Big Shoulders Stencil Display](https://fonts.google.com/specimen/Big+Shoulders+Stencil+Display)
 - Github Icon: [Provided by Flaticon](https://www.flaticon.com/)
+
+## Built With
+
+- HTML
+- CSS
+- JavaScript
+
+## Contributing
+
+Contributions are welcome! If you have ideas for improvement or want to add features, please fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE), allowing for collaboration and sharing.
