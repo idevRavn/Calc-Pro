@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Pixelify+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@100..900&display=swap");
 
 * {
   margin: 0;
@@ -12,14 +13,10 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 10px;
+  gap: 20px;
   height: 100vh;
 }
 
-.calc-pro {
-  background-color: #666666;
-  padding: 20px;
-}
 h1 {
   font-size: 3rem;
   font-family: "Bungee Spice", sans-serif;
@@ -35,13 +32,14 @@ h1 {
   height: 60px;
   color: #fff;
   text-align: right;
-  font-size: 2rem;
+  font-size: 2.5rem;
   height: 60px;
   margin: 10px;
   padding: 5px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  font-family: "Big Shoulders Stencil Display", sans-serif;
 }
 
 .operator,
@@ -59,10 +57,16 @@ h1 {
   background-color: rgb(58, 58, 58);
 }
 
-#equalTo.operator {
+#equalTo {
   background-color: #d14411;
 }
 
 .operator {
   background-color: #5e5e5e;
+}
+
+.footer {
+  display: flex;
+  font-size: 1.2rem;
+  gap: 5px;
 }
