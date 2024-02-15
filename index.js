@@ -6,10 +6,19 @@ let secondNumber = 0;
 let operator = "";
 let result = 0;
 
+function checkLength() {
+  if (display.textContent.length > 14) {
+    display.textContent = "I'm full, bruh?!!";
+  }
+}
+
 buttons.forEach((button) => {
   if (button.classList.contains("number")) {
     button.addEventListener("click", () => {
-      if (display.textContent === "Are you serious?") {
+      if (
+        display.textContent === "Are you serious?" ||
+        display.textContent === "I'm full, bruh?!!"
+      ) {
         display.textContent = "";
         result = "";
         display.textContent += button.textContent;
@@ -20,6 +29,7 @@ buttons.forEach((button) => {
       } else {
         display.textContent += button.textContent;
       }
+      checkLength();
     });
   } else {
     button.addEventListener("click", () => {
@@ -33,13 +43,17 @@ buttons.forEach((button) => {
           calculate(firstNumber, secondNumber, operator);
         }
       } else {
-        if (display.textContent !== "") {
+        if (
+          display.textContent !== "" &&
+          display.textContent !== "I'm full, bruh?!!"
+        ) {
           firstNumber = parseFloat(display.textContent);
           operator = button.textContent;
           display.textContent = "";
         }
       }
     });
+    checkLength();
   }
 });
 
