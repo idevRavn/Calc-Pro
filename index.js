@@ -41,13 +41,17 @@ function calculate(firstNumber, secondNumber, operator) {
       result = firstNumber * secondNumber;
       break;
     case "/":
-      result = firstNumber / secondNumber;
+      if (secondNumber === 0) {
+        result = "Are you serious?";
+      } else {
+        result = firstNumber / secondNumber;
+      }
       break;
     case "%":
       result = firstNumber % secondNumber;
       break;
     default:
-      return "";
+      return "Invalid operator!";
   }
   display.textContent = result;
 }
