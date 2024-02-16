@@ -38,7 +38,10 @@ buttons.forEach((button) => {
       } else if (button.textContent === "DE") {
         display.textContent = display.textContent.slice(0, -1);
       } else if (button.textContent === "=") {
-        if (display.textContent !== "") {
+        if (
+          display.textContent !== "" &&
+          display.textContent !== "I'm full, bruh?!!"
+        ) {
           secondNumber = parseFloat(display.textContent);
           calculate(firstNumber, secondNumber, operator);
         }
